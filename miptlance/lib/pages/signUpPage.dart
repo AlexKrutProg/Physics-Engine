@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:my_money_handler/services/dataBase.dart';
+import 'package:my_money_handler/services/userDataBase.dart';
 import 'package:my_money_handler/services/auth.dart';
 
 class SignUpPage extends StatefulWidget {
@@ -106,7 +106,7 @@ class _SignUpPageState extends State<SignUpPage> {
                          final user = await _auth.registerWithEmailAndPassword(
                                 _emailController.text,
                                 _passwordController.text);
-                         await DataBaseService(uid: user.uid).CreateUserData();
+                         await UserDataBaseService(uid: user.uid).CreateUserData();
                       }
                     },
                     child: Text('Submit'),

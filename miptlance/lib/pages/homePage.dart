@@ -2,10 +2,15 @@
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:flutter/material.dart';
 import 'package:my_money_handler/services/auth.dart';
-import 'package:my_money_handler/services/dataBase.dart';
+import 'package:my_money_handler/services/userDataBase.dart';
 import 'package:provider/provider.dart';
 import 'personalPage.dart';
 import 'settings.dart';
+import 'homeUI.dart';
+import 'offersPage.dart';
+import 'MyOffersPage.dart';
+import 'package:my_money_handler/userClasses/UserIdentifier.dart';
+import 'package:provider/provider.dart';
 class HomePage extends StatefulWidget {
   const HomePage({Key? key}) : super(key: key);
 
@@ -15,7 +20,6 @@ class HomePage extends StatefulWidget {
 
 class _HomePageState extends State<HomePage> {
   int _selectedIndex = 1;
-
   void _setIndex(int index) {
     if (_selectedIndex == index) return;
     setState(() {
@@ -24,18 +28,9 @@ class _HomePageState extends State<HomePage> {
   }
 
   static const List<Widget> _pages = <Widget>[
-    Icon(
-      Icons.call,
-      size: 150,
-    ),
-    Icon(
-      Icons.camera,
-      size: 150,
-    ),
-    Icon(
-      Icons.chat,
-      size: 150,
-    ),
+    OffersPage(),
+    HomeUI(),
+    MyOffersPage(),
   ];
   final AuthService _auth = AuthService();
   void handleClick(String value) {

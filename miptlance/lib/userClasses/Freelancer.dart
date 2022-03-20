@@ -1,4 +1,3 @@
-class Freelancer {
-  Freelancer();
-  void takeOrder() {}
+mixin Freelancer {
+
 }
