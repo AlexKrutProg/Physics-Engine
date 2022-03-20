@@ -4,7 +4,8 @@ import 'package:flutter/material.dart';
 import 'package:my_money_handler/services/auth.dart';
 import 'package:my_money_handler/services/dataBase.dart';
 import 'package:provider/provider.dart';
-
+import 'personalPage.dart';
+import 'settings.dart';
 class HomePage extends StatefulWidget {
   const HomePage({Key? key}) : super(key: key);
 
@@ -37,18 +38,37 @@ class _HomePageState extends State<HomePage> {
     ),
   ];
   final AuthService _auth = AuthService();
-
+  void handleClick(String value) {
+    switch(value) {
+      case 'Logout':
+        _auth.signOut();
+        break;
+      case 'Settings':
+        Navigator.pushNamed(context, '/settings');
+        break;
+      case 'personal page':
+        Navigator.pushNamed(context, '/personalPage');
+        break;
+    }
+  }
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
         title: Text("MiptLance"),
+        centerTitle: true,
         actions: [
-          IconButton(
-              onPressed: () async {
-                await _auth.signOut();
-              },
-              icon: Icon(Icons.logout)),
-        ],
+          PopupMenuButton<String>(
+            onSelected: handleClick,
+            itemBuilder: (BuildContext context) {
+              return {'Settings','personal page','Logout'}.map((String choice) {
+                return PopupMenuItem<String>(
+                  value: choice,
+                  child: Text(choice),
+                );
+              }).toList();
+            },
+          ),
+          ],
       ),
       body: Center(
         child: _pages.elementAt(_selectedIndex), //New
@@ -58,11 +78,11 @@ class _HomePageState extends State<HomePage> {
         onTap: _setIndex,
         items: [
           BottomNavigationBarItem(
-              icon: Icon(Icons.local_offer), label: "my offers"),
+              icon: Icon(Icons.local_offer), label: "create offer"),
           BottomNavigationBarItem(
-              icon: Icon(Icons.home), label: "personal page"),
+              icon: Icon(Icons.home), label: "home"),
           BottomNavigationBarItem(
-              icon: Icon(Icons.people_rounded), label: "offers"),
+              icon: Icon(Icons.people_rounded), label: "get job"),
         ],
       ),
     );

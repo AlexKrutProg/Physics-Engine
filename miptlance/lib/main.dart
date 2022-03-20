@@ -5,6 +5,8 @@ import 'package:firebase_core/firebase_core.dart';
 import 'package:provider/provider.dart';
 import 'package:my_money_handler/services/auth.dart';
 import 'package:my_money_handler/userClasses/UserIdentifier.dart';
+import 'pages/settings.dart';
+import 'pages/personalPage.dart';
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
@@ -17,7 +19,9 @@ void main() async {
         home: Wrapper(),
         routes: {
           '/signUp': (context) => const SignUpPage(),
-          },
+          '/settings': (context) => SettingsPage(),
+          '/personalPage': (context) => PersonalPage(),
+        },
         theme: ThemeData(
           brightness: Brightness.light,
           primaryColor: Colors.blue,
