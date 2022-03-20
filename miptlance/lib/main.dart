@@ -20,9 +20,9 @@ void main() async {
           },
         theme: ThemeData(
           brightness: Brightness.light,
-          primaryColor: Colors.amberAccent,
-          focusColor: Colors.amberAccent,
-          backgroundColor: Colors.amberAccent,
+          primaryColor: Colors.blue,
+          focusColor: Colors.blue,
+          backgroundColor: Colors.blue,
           fontFamily: 'MainFont',
           textTheme: const TextTheme(
             bodyText1: TextStyle(
