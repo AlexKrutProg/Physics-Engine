@@ -99,7 +99,7 @@ class _SignUpPageState extends State<SignUpPage> {
                   ElevatedButton(
                     style: ButtonStyle(
                       backgroundColor:
-                          MaterialStateProperty.all(Colors.amberAccent),
+                          MaterialStateProperty.all(Theme.of(context).primaryColor),
                     ),
                     onPressed: () async {
                       if (_key.currentState!.validate()) {
