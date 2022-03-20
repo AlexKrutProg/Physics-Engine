@@ -1,4 +1,4 @@
-# miptlance
+# my_money_handler
 
 A new Flutter project.
 

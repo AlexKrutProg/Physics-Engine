@@ -1,7 +1,7 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.example.miptlance">
-   <application
-        android:label="miptlance"
+    package="com.example.my_money_handler">
+    <application
+        android:label="my_money_handler"
         android:name="${applicationName}"
         android:icon="@mipmap/ic_launcher">
         <activity
