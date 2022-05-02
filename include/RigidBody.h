@@ -83,88 +83,30 @@ public:
     void changeForce( const Vector2& delta_force);
     void changeForceAt(const Vector2& delta_force, const Vector2& at);
 
+    Vector2 torque();
+    void setTorque(double x, double y);
+    void setTorque(const Vector2& _torque);
+    void changeTorque(double delta_x, double delta_y);
+    void changeTorque(const Vector2& delta_torque);
 
-    Vector2 Torque()
-    { return state.torque; }
-
-    void SetTorque( double x, double y, double z )
-    { state.torque.Set( x, y, z ); }
-
-    void SetTorque( const Vector2& v )
-    { state.torque = v; }
-
-    void AddTorque( double dx, double dy, double dz )
-    { state.torque.Add(dx, dy, dz); }
-
-    void AddTorque( const Vector2& dv )
-    { state.torque += dv; }
-
-
-    void SetShapeParameter( double mass,
-                            double hx, double hy, double hz,
-                            double restitution_coeff, double friction_coeff );
-
-    Vector2 HalfExtent()
-    { return shape.half_extent; }
-
-    double Restitution()
-    { return shape.restitution_coefficient; }
-
-    double Friction()
-    { return shape.friction_coefficient; }
-
-    double InvMass()
-    { return shape.inv_mass; }
-
-    Matrix2 InvInertia()
-    { return shape.inv_inertia; }
-
-    Matrix2 InvInertiaWorld()
-    { return state.inv_inertia_world; }
-
-    void UpdateInvInertiaWorld();
-
-
-    rbu32 Attribute()
-    { return attribute; }
-    void EnableAttribute( rbu32 attr )
-    { attribute |= attr; }
-    void DisableAttribute( rbu32 attr )
-    { attribute &= ~attr; }
-    bool AttributeEnabled( rbu32 attr )
-    { return (attribute & attr) != 0; }
-
-    bool IsFixed()
-    { return (attribute & Attribute_Fixed) != 0; }
-    bool IsNotFixed()
-    { return (attribute & Attribute_Fixed) == 0; }
-
-    bool Sleeping()
-    { return sleep_status.On == true; }
-    bool Awake()
-    { return sleep_status.On == false; }
-    void SetSleepOn()
-    { sleep_status.On = true; }
-    void SetSleepOff()
-    { sleep_status.On = false; }
-
+    void setBodyParams(double x, double y, double mass, double _restitution_coefficient, double _friction_coefficient);
+    Vector2 halfExtent();
+    double restitution();
+    double friction();
+    double inverseMass();
+    Matrix2 inverseInertia();
+    Matrix2 inverseInertiaAbsolute();
+    void updateInverseInertiaAbsolute();
 
     void UpdateVelocity( double dt );
     void ApplyImpulse( const Vector2& impulse, const Vector2& relative_position );
     void CorrectVelocity();
     void UpdatePosition( double dt );
     void UpdateSleepStatus( double dt );
-
-    void ClearSolverWorkArea()
-    { solver_work_area.Clear(); }
-
-    void ClearSleepStatus()
-    { sleep_status.Clear(); }
-
+    void ClearSolver();
     void ResetStatuses()
     {
-        ClearSolverWorkArea();
-        ClearSleepStatus();
+//        ClearSolverWorkArea();
     }
 
 private:

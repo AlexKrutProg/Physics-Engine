@@ -1,7 +1,4 @@
 #include "../include/RigidBody.h"
-#define zeroVector2
-#define identityMatrix2
-#define identityVector2
 
 RigidBody::State::State(): position(zeroVector2), orientation(identityMatrix2), velocity(zeroVector2),
                 force(zeroVector2), inverse_inertia(identityMatrix2),
@@ -162,17 +159,72 @@ void RigidBody::setForce(const Vector2 &_force) {
 }
 
 void RigidBody::setForceAt(const Vector2 &_force, const Vector2 &at) {
-
+    Vector2 relative_position = at - state.position;
+    state.torque = relative_position % _force;
 }
 
 void RigidBody::changeForce(double delta_x, double delta_y) {
-
+    state.force.Change(delta_x, delta_y);
 }
 
 void RigidBody::changeForce(const Vector2 &delta_force) {
-
+    state.force += delta_force;
 }
 
 void RigidBody::changeForceAt(const Vector2 &delta_force, const Vector2 &at) {
-
+    Vector2 relative_position = at - state.position;
+    state.torque += relative_position % delta_force;
 }
+
+Vector2 RigidBody::torque() {
+    return state.torque;
+}
+
+void RigidBody::setTorque(double x, double y) {
+    state.torque.Set(x, y);
+}
+
+void RigidBody::setTorque(const Vector2 &_torque) {
+    state.torque = _torque;
+}
+
+void RigidBody::changeTorque(double delta_x, double delta_y) {
+    state.torque.Change(delta_x, delta_y);
+}
+
+void RigidBody::changeTorque(const Vector2 &delta_torque) {
+    state.torque += delta_torque;
+}
+
+void RigidBody::setBodyParams(double x, double y, double mass, double _restitution_coefficient, double _friction_coefficient) {
+    body.Set(x, y, mass, _restitution_coefficient, _friction_coefficient);
+}
+
+Vector2 RigidBody::halfExtent() {
+    return body.half_extent;
+}
+
+double RigidBody::restitution() {
+    return body.restitution_coefficient;
+}
+
+double RigidBody::friction() {
+    return body.friction_coefficient;
+}
+
+double RigidBody::inverseMass() {
+    return body.inverse_mass;
+}
+
+Matrix2 RigidBody::inverseInertia() {
+    return body.inverse_inertia;
+}
+
+Matrix2 RigidBody::inverseInertiaAbsolute() {
+    return state.inverse_inertia;
+}
+
+void RigidBody::updateInverseInertiaAbsolute() {
+    state.inverse_inertia = state.orientation * body.inverse_inertia * state.orientation.GetTransposed();
+}
+
