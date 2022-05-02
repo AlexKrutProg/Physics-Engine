@@ -1,6 +1,6 @@
 #include <SFML/Graphics/RectangleShape.hpp>
 #include "../include/PhysComponent.h"
-#include "../CollisionManager.h"
+#include "../include/CollisionManager.h"
 #include "../GlobalInfo.h"
 
 PhysComponent::PhysComponent(GameObject &gameObject1, const float mass,
