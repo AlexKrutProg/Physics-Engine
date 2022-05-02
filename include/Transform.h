@@ -1,7 +1,3 @@
-#ifndef BUBBLYENGINE_TRANSFORM_H
-#define BUBBLYENGINE_TRANSFORM_H
-
-
 #include <SFML/System.hpp>
 
 class Transform {
@@ -27,6 +23,3 @@ public:
 
     void setScale(const sf::Vector2f& scale);
 };
-
-
-#endif //SHOOTINGGALLERY_TRANSFORM_H
