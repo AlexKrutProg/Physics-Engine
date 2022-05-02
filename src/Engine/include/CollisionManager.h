@@ -1,6 +1,6 @@
 #include <vector>
 #include "AbstractManager.h"
-
+#pragma once
 class PhysComponent;
 
 class CollisionManager : public AbstractManager {

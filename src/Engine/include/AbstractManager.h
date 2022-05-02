@@ -1,5 +1,5 @@
 #include "Component.h"
-
+#pragma once
 class AbstractManager {
 public:
     virtual void add(Component *);
