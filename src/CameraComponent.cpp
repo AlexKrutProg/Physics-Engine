@@ -1,5 +1,5 @@
 #include "../include/CameraComponent.h"
-#include "../GlobalInfo.h"
+#include "../include/GlobalInfo.h"
 
 CameraComponent::CameraComponent(GameObject &gameObject) :
         Component(gameObject),

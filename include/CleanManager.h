@@ -1,6 +1,6 @@
 #include <stack>
 #include "AbstractManager.h"
-#include "../GameObject.h"
+#include "GameObject.h"
 
 class CleanManager {
 private:

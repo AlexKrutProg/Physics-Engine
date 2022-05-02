@@ -1,6 +1,6 @@
 #include "../include/SpriteComponent.h"
-#include "../GameObject.h"
-#include "../GlobalInfo.h"
+#include "../include/GameObject.h"
+#include "../include/GlobalInfo.h"
 #include <SFML/Graphics.hpp>
 
 sf::Vector2f SpriteComponent::getScaleToUnits(sf::Vector2f units) const {

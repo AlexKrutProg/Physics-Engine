@@ -1,7 +1,7 @@
 #include <SFML/Graphics/RectangleShape.hpp>
 #include "../include/PhysComponent.h"
 #include "../include/CollisionManager.h"
-#include "../GlobalInfo.h"
+#include "../include/GlobalInfo.h"
 
 PhysComponent::PhysComponent(GameObject &gameObject1, const float mass,
                              bool affectGravity, bool dynamic)

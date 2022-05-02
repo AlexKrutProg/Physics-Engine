@@ -1,8 +1,8 @@
 #include <SFML/System.hpp>
 #include <memory>
-#include "../GameObject.h"
+#include "GameObject.h"
 #include "Component.h"
-#include "../Collider.h"
+#include "Collider.h"
 
 class CollisionManager;
 
