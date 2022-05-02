@@ -5,12 +5,12 @@ class GameObject;
 
 class Component {
 public:
-    Component(GameObject*);
-    GameObject* getGameObject();
+    Component(GameObject&);
+    GameObject& getGameObject();
     virtual void update();
     virtual void draw();
     virtual ~Component();
 
 protected:
-    GameObject* gameObject;
+    GameObject& gameObject;
 };
