@@ -3,4 +3,4 @@ project(Physics_Engine)
 
 set(CMAKE_CXX_STANDARD 17)
 
-add_executable(Physics_Engine main.cpp include/RigidBody.h src/RigidBody.cpp include/vectorMath.h)
+add_executable(Physics_Engine main.cpp)
