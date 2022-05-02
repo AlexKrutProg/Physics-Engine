@@ -1,6 +1,5 @@
 #include <iostream>
-
+#include "include/vectorMath.h"
 int main() {
-    std::cout << "Hello, World!" << std::endl;
     return 0;
 }
