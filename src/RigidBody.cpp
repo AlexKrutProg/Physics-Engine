@@ -228,3 +228,38 @@ void RigidBody::updateInverseInertiaAbsolute() {
     state.inverse_inertia = state.orientation * body.inverse_inertia * state.orientation.GetTransposed();
 }
 
+void RigidBody::updateVelocity(double delta) {
+    state.velocity += body.inverse_mass * delta * state.force;
+    state.angular_momentum += delta * state.torque;
+    state.angular_velocity = state.inverse_inertia * state.angular_momentum;
+}
+
+void RigidBody::applyImpulse(const Vector2 &impulse, const Vector2 &relative_position) {
+    solver.delta_velocity += body.inverse_mass * impulse;
+    Vector2 param = relative_position % impulse;
+    solver.delta_angular_momentum += param;
+    solver.delta_angular_velocity += state.inverse_inertia * param;
+}
+
+void RigidBody::recountVelocity() {
+    state.velocity += solver.delta_velocity;
+    state.angular_momentum += solver.delta_angular_momentum;
+    state.angular_velocity += solver.delta_angular_velocity;
+}
+
+void RigidBody::updatePosition(double delta) {
+    state.position += delta * state.velocity;
+    Matrix2 rotation;
+    rotation.SetAsCrossProductMatrix(state.angular_velocity);
+    state.orientation += delta * rotation * state.orientation;
+    state.orientation.Orthonormalize();
+}
+
+void RigidBody::clearSolver() {
+    solver.Clear();
+}
+
+void RigidBody::resetStatuses() {
+    solver.Clear();
+}
+

@@ -98,16 +98,12 @@ public:
     Matrix2 inverseInertiaAbsolute();
     void updateInverseInertiaAbsolute();
 
-    void UpdateVelocity( double dt );
-    void ApplyImpulse( const Vector2& impulse, const Vector2& relative_position );
-    void CorrectVelocity();
-    void UpdatePosition( double dt );
-    void UpdateSleepStatus( double dt );
-    void ClearSolver();
-    void ResetStatuses()
-    {
-//        ClearSolverWorkArea();
-    }
+    void updateVelocity(double delta);
+    void applyImpulse(const Vector2& impulse, const Vector2& relative_position);
+    void recountVelocity();
+    void updatePosition(double delta);
+    void clearSolver();
+    void resetStatuses();
 
 private:
     State state;
