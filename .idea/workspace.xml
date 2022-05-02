@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-  <component name="CMakeRunConfigurationManager" shouldGenerate="true" shouldDeleteObsolete="true">
+  <component name="CMakeRunConfigurationManager">
     <generated>
       <config projectName="Physics_Engine" targetName="Physics_Engine" />
     </generated>
@@ -15,7 +15,11 @@
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/CMakeLists.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/include/RigidBody.h" beforeDir="false" />
+<<<<<<< HEAD
       <change beforePath="$PROJECT_DIR$/include/vectorMath.h" beforeDir="false" />
+=======
+      <change beforePath="$PROJECT_DIR$/include/vectorMath.h" beforeDir="false" afterPath="$PROJECT_DIR$/include/vectorMath.h" afterDir="false" />
+>>>>>>> a45296d19e4d9f0044b7ad4becfe296958680927
       <change beforePath="$PROJECT_DIR$/src/RigidBody.cpp" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -51,6 +55,7 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
+<<<<<<< HEAD
   <component name="PropertiesComponent">
     <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
@@ -67,13 +72,27 @@
       <recent name="$PROJECT_DIR$/src" />
     </key>
   </component>
+=======
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.cidr.known.project.marker": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "cf.first.check.clang-format": "false",
+    "cidr.known.project.marker": "true",
+    "cmake.loaded.for.project": "true",
+    "last_opened_file_path": "/home/nikita/rigidbox"
+  }
+}]]></component>
+>>>>>>> a45296d19e4d9f0044b7ad4becfe296958680927
   <component name="RunManager">
-    <configuration default="true" type="CLionExternalRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" PASS_PARENT_ENVS_2="true">
+    <configuration name="Physics_Engine" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="Physics_Engine" TARGET_NAME="Physics_Engine" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="Physics_Engine" RUN_TARGET_NAME="Physics_Engine">
       <method v="2">
-        <option name="CLION.EXTERNAL.BUILD" enabled="true" />
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Physics_Engine" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="Physics_Engine" TARGET_NAME="Physics_Engine" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="Physics_Engine" RUN_TARGET_NAME="Physics_Engine">
+    <configuration default="true" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" PASS_PARENT_ENVS_2="true">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
@@ -87,7 +106,12 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1651500133192</updated>
+<<<<<<< HEAD
       <workItem from="1651500134890" duration="19873000" />
+=======
+      <workItem from="1651500134890" duration="8874000" />
+      <workItem from="1651510028790" duration="1603000" />
+>>>>>>> a45296d19e4d9f0044b7ad4becfe296958680927
     </task>
     <servers />
   </component>

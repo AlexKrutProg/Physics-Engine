@@ -1,0 +1,3 @@
+/home/alexkrut/Repositories/Projects/Physics-Engine/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+/home/alexkrut/Repositories/Projects/Physics-Engine/cmake-build-debug/CMakeFiles/edit_cache.dir
+/home/alexkrut/Repositories/Projects/Physics-Engine/cmake-build-debug/CMakeFiles/Physics_Engine.dir
