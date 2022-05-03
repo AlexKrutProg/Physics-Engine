@@ -9,14 +9,18 @@ private:
     Scene scene;
     sf::Texture backgroundTexture;
 
-    void addBubble(const sf::Vector2f& arg) {
+    void addBubble(const sf::Vector2f& position) {
+        // создание объекта
         auto& newGameObject = scene.createGameObject();
+        // добавление спрайта для данного объекта
         newGameObject.addComponent("Sprite", new SpriteComponent(newGameObject, bubbleTexture));
+        // добавление физической компоненты
         newGameObject.addComponent("Physics",
                                    new PhysComponent(newGameObject, 0.5, true, true));
         const auto currentPhysComponent = newGameObject.getComponent<PhysComponent>("Physics");
+        // добавление коллайдера
         currentPhysComponent.lock()->setCollider(Collider::circleCollider(0.45f));
-        newGameObject.getTransform().position = arg;
+        newGameObject.getTransform().position = position;
         newGameObject.addComponent("Bubble", new BubbleComponent(newGameObject));
     }
 
