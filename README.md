@@ -20,6 +20,6 @@
 
 > $ git clone git@github.com:AlexKrutProg/Physics-Engine.git
 > 
-> git checkout checkoint_3
+> $ git checkout checkoint_3
 > 
-> bash run.sh
+> $ bash run.sh
