@@ -1,3 +1,4 @@
+# дефолтный скрипт
 # This script locates the SFML library
 # ------------------------------------
 #
