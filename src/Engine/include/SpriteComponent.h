@@ -1,7 +1,7 @@
 #include <SFML/Graphics/Sprite.hpp>
 #include <SFML/Graphics/RenderWindow.hpp>
 #include "Component.h"
-
+#pragma once
 class SpriteComponent : public Component {
 private:
     sf::Sprite sprite;

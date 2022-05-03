@@ -1,6 +1,6 @@
 #include <memory>
 #include "Transform.h"
-
+#pragma once
 class GameObject;
 
 class Component {

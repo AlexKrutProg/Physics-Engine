@@ -1,15 +1,8 @@
-// This is an open source non-commercial project. Dear PVS-Studio, please check it.
-// PVS-Studio Static Code Analyzer for C, C++ and C#: http://www.viva64.com
-
-#ifndef BUBBLYENGINE_GAMEOBJECT_H
-#define BUBBLYENGINE_GAMEOBJECT_H
-
-
 #include <forward_list>
 #include <map>
 #include <memory>
 #include "Transform.h"
-
+#pragma once
 class Component;
 
 class GlobalInfo;
@@ -54,6 +47,3 @@ public:
 
     Transform &getTransform();
 };
-
-
-#endif

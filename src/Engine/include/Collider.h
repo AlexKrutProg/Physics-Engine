@@ -1,10 +1,10 @@
-#ifndef BUBBLYENGINE_COLLIDER_H
-#define BUBBLYENGINE_COLLIDER_H
+
 
 #include <vector>
 #include <SFML/System.hpp>
 #include <variant>
 
+#pragma once
 enum ColliderType {
     CIRCLE,
     RECTANGLE
@@ -26,5 +26,3 @@ public:
     static Collider rectangleCollider(sf::Vector2f size);
 };
 
-
-#endif //SHOOTINGGALLERY_COLLIDER_H

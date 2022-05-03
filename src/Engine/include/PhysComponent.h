@@ -3,7 +3,7 @@
 #include "GameObject.h"
 #include "Component.h"
 #include "Collider.h"
-
+#pragma once
 class CollisionManager;
 
 class PhysComponent;
@@ -35,6 +35,7 @@ public:
     void setMass(float);
 
     void addForce(const sf::Vector2f &);
+
     void addImpulse(const sf::Vector2f &);
 
     void setDynamic(bool);

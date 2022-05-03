@@ -9,8 +9,7 @@ Scene::Scene(std::function<void()> fun) : cleaner(gameObjects),
                                           needReload(true),
                                           info(*this),
                                           backgroundLoaded(false),
-                                          loadLevel(fun),
-                                          mainCamera(nullptr){}
+                                          loadLevel(fun){}
 
 void Scene::update() {
     info.getCollisionDetector().update();
@@ -38,6 +37,8 @@ void Scene::startGameLoop() {
         while (info.getWindow().pollEvent(event)) {
             if (event.type == sf::Event::Closed)
                 info.getWindow().close();
+            if (event.type == sf::Event::KeyPressed && event.key.code == sf::Keyboard::Enter)
+                needReload = true;
         }
         if (needReload) {
             gameObjects.clear();

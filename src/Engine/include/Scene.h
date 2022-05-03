@@ -1,16 +1,11 @@
-#ifndef BUBBLYENGINE_SCENE_H
-#define BUBBLYENGINE_SCENE_H
-
-
 #include <SFML/Graphics/Sprite.hpp>
 #include <SFML/Graphics/Font.hpp>
 #include "GlobalInfo.h"
 #include "GameObject.h"
 #include "CollisionManager.h"
 #include "CleanManager.h"
-#include "CameraComponent.h"
 #include <functional>
-
+#pragma once
 class Scene {
 private:
     GlobalInfo info;
@@ -38,6 +33,3 @@ public:
 
     const GlobalInfo &getInfo() const;
 };
-
-
-#endif //SHOOTINGGALLERY_GAMEFIELD_H
