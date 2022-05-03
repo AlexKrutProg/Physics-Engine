@@ -21,5 +21,7 @@
 > $ git clone git@github.com:AlexKrutProg/Physics-Engine.git
 > 
 > $ git checkout checkoint_3
+>
+> $ cd Physics-Engine 
 > 
 > $ bash run.sh
