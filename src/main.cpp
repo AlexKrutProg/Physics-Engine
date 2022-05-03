@@ -2,7 +2,7 @@
 #include "Engine/include/SpriteComponent.h"
 #include "Engine/include/PhysComponent.h"
 #include "BubbleComponent.h"
-
+#include <random>
 class Game {
 private:
     sf::Texture bubbleTexture;
@@ -13,9 +13,9 @@ private:
         auto& newGameObject = scene.createGameObject();
         newGameObject.addComponent("Sprite", new SpriteComponent(newGameObject, bubbleTexture));
         newGameObject.addComponent("Physics",
-                                   new PhysComponent(newGameObject, 1.0f, true, true));
+                                   new PhysComponent(newGameObject, 0.5, true, true));
         const auto currentPhysComponent = newGameObject.getComponent<PhysComponent>("Physics");
-        currentPhysComponent.lock()->setCollider(Collider::circleCollider(0.5f));
+        currentPhysComponent.lock()->setCollider(Collider::circleCollider(0.45f));
         newGameObject.getTransform().position = arg;
         newGameObject.addComponent("Bubble", new BubbleComponent(newGameObject));
     }
@@ -30,24 +30,15 @@ private:
     }
 
     void loadLevel() {
-        backgroundTexture.loadFromFile("../images/bg.png");
+        backgroundTexture.loadFromFile("../../images/bg.png");
         backgroundTexture.setSmooth(true);
         scene.setBackground(backgroundTexture);
-        bubbleTexture.loadFromFile("../images/circle.png");
+        bubbleTexture.loadFromFile("../../images/circle.png");
         bubbleTexture.setSmooth(true);
         auto& bubbleObject = scene.createGameObject();
 
-        for (auto i = 0; i < 10; ++i)
-            addBubble(sf::Vector2f(0.5f + 2 * i, 0.5f));
-
-        for (auto i = 0; i < 10; ++i)
-            addBubble(sf::Vector2f(2.0f + 2 * i, 2.0f));
-
-        for (auto i = 0; i < 10; ++i)
-            addBubble(sf::Vector2f(5.0f + 2 * i, 4.5f));
-
-        for (auto i = 0; i < 10; ++i)
-            addBubble(sf::Vector2f(7.0f + 2 * i, 6.5f));
+        for (auto i = 0; i < 40; ++i)
+            addBubble(sf::Vector2f(float(rand() % 30),float(rand() % 30)));
 
         const auto screenW = scene.getInfo().screenWidthInUnits;
         const auto screenH = scene.getInfo().screenHeightInUnits;
@@ -60,10 +51,6 @@ private:
                 sf::Vector2f(-0.75f, screenH / 2));
         addWall(sf::Vector2f(0.5f, screenH),
                 sf::Vector2f(screenW - 0.25f, screenH / 2));
-        auto& camera = scene.createGameObject();
-        const auto camComp = new CameraComponent(camera);
-        camera.addComponent("Camera", camComp);
-        camComp->setMain(true);
     }
 
 public:

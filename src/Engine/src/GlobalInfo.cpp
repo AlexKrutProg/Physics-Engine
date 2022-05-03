@@ -1,14 +1,11 @@
 #include "../include/GlobalInfo.h"
 
 GlobalInfo::GlobalInfo(Scene &scene1)
-        : gravity(0.0, 9.81f),
+        : gravity(0.0, 5.0f),
           pixelsPerUnit(screenW/screenWidthInUnits),
           window(sf::VideoMode(screenW, screenH),
-                 "Bubble game", sf::Style::Close),
+                 "Engine", sf::Style::Close),
           scene(scene1) {
-    if (!font.loadFromFile("../fonts/Boxy-Bold.ttf")) {
-        //TODO
-    }
     window.setFramerateLimit(60);
     window.setVerticalSyncEnabled(true);
     clock.restart();
@@ -41,8 +38,4 @@ void GlobalInfo::onFrameDone() {
 
 CollisionManager &GlobalInfo::getCollisionDetector() {
     return collisionDetector;
-}
-
-const sf::Font &GlobalInfo::getFont() {
-    return font;
 }

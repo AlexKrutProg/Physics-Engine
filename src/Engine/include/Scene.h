@@ -4,7 +4,6 @@
 #include "GameObject.h"
 #include "CollisionManager.h"
 #include "CleanManager.h"
-#include "CameraComponent.h"
 #include <functional>
 #pragma once
 class Scene {
@@ -21,7 +20,6 @@ private:
     sf::Sprite background;
     bool backgroundLoaded;
     std::function<void()> loadLevel;
-    CameraComponent* mainCamera;
 public:
     explicit Scene(std::function<void()>);
 
