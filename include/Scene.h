@@ -25,7 +25,6 @@ private:
     sf::Sprite background;
     bool backgroundLoaded;
     std::function<void()> loadLevel;
-    CameraComponent* mainCamera;
 public:
     explicit Scene(std::function<void()>);
 

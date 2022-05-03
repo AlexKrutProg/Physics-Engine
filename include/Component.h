@@ -7,7 +7,7 @@ class Component {
 protected:
     GameObject &gameObject;
 public:
-    Component(GameObject &gameObject);
+    explicit Component(GameObject &gameObject);
 
     GameObject &getGameObject();
 

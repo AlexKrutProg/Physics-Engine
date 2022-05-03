@@ -10,7 +10,6 @@ enum ColliderType {
     RECTANGLE
 };
 
-//Abstract collider
 class Collider {
 private:
     ColliderType type;
