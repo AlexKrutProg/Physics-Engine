@@ -7,7 +7,7 @@ GameObject::GameObject(GlobalInfo &gameWorld)
 }
 
 void GameObject::update() {
-    for (auto &el:components) {
+    for (auto &el: components) {
         el.second->update();
     }
 }

@@ -24,6 +24,7 @@ bool CollisionManager::checkCollisions(PhysComponent *a, PhysComponent *b) {
         if (result) {
             const auto depthVec = disVec / centerDistance * (rad - centerDistance);
             a->gameObject.getTransform().position += depthVec;
+
         }
         return result;
     } else if (a->collider.getType() == RECTANGLE && b->collider.getType() == RECTANGLE) {

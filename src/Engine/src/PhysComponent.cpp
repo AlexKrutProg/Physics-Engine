@@ -40,7 +40,7 @@ void PhysComponent::update() {
         speed += totalAcceleration * deltaSeconds;
         if (!collisions.empty())
             speed = (collisions.back()->speed * collisions.back()->mass - speed * mass)
-                    * mass / (collisions.back()->mass + mass) * 0.9f;
+                   / (collisions.back()->mass + mass) * 0.9f;
         gameObject.getTransform().position +=
                 speed * deltaSeconds;
     }
