@@ -17,9 +17,8 @@ private:
     sf::Vector2f gravity;
     sf::RenderWindow window;
     CollisionManager collisionDetector;
-    Scene& scene;
 public:
-    explicit GlobalInfo(Scene&);
+    explicit GlobalInfo();
 
     void onFrameDone();
 
@@ -32,8 +31,6 @@ public:
     sf::RenderWindow& getWindow();
 
     CollisionManager& getCollisionDetector();
-
-    Scene& getScene();
 
     static constexpr int screenW = (1280);
     static constexpr int screenH = (720);

@@ -8,8 +8,6 @@ class CollisionManager;
 
 class PhysComponent;
 
-typedef std::vector<PhysComponent *> CollisionList;
-
 class PhysComponent : public Component {
 private:
     friend class CollisionManager;
@@ -17,7 +15,7 @@ private:
     float mass;
     sf::Vector2f speed;
     sf::Vector2f acceleration;
-    CollisionList collisions;
+    std::vector<PhysComponent *> collisions;
     Collider collider;
     bool affectGravity;
     bool isDynamic;
@@ -40,7 +38,7 @@ public:
 
     void setDynamic(bool);
 
-    const CollisionList &getCollisions();
+    const std::vector<PhysComponent *> &getCollisions();
 
     ~PhysComponent();
 };

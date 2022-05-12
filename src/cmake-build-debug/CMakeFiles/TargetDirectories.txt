@@ -1,0 +1,6 @@
+/home/nikita/Physics-Engine/src/cmake-build-debug/CMakeFiles/Demo.dir
+/home/nikita/Physics-Engine/src/cmake-build-debug/CMakeFiles/edit_cache.dir
+/home/nikita/Physics-Engine/src/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+/home/nikita/Physics-Engine/src/cmake-build-debug/Engine/CMakeFiles/Engine.dir
+/home/nikita/Physics-Engine/src/cmake-build-debug/Engine/CMakeFiles/edit_cache.dir
+/home/nikita/Physics-Engine/src/cmake-build-debug/Engine/CMakeFiles/rebuild_cache.dir

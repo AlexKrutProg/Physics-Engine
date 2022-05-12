@@ -64,7 +64,7 @@ void PhysComponent::setCollider(const Collider &col) {
     collider = col;
 }
 
-const CollisionList &PhysComponent::getCollisions() {
+const std::vector<PhysComponent *> &PhysComponent::getCollisions() {
     return collisions;
 }
 

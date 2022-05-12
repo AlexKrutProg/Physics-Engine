@@ -7,7 +7,6 @@
 
 Scene::Scene(std::function<void()> fun) : cleaner(gameObjects),
                                           needReload(true),
-                                          info(*this),
                                           backgroundLoaded(false),
                                           loadLevel(fun){}
 

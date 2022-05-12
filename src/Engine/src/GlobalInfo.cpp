@@ -1,19 +1,16 @@
 #include "../include/GlobalInfo.h"
 
-GlobalInfo::GlobalInfo(Scene &scene1)
+GlobalInfo::GlobalInfo()
         : gravity(0.0, 5.0f),
           pixelsPerUnit(screenW/screenWidthInUnits),
           window(sf::VideoMode(screenW, screenH),
-                 "Engine", sf::Style::Close),
-          scene(scene1) {
+                 "Engine", sf::Style::Close)
+           {
     window.setFramerateLimit(60);
     window.setVerticalSyncEnabled(true);
     clock.restart();
 }
 
-Scene &GlobalInfo::getScene() {
-    return scene;
-}
 
 sf::RenderWindow &GlobalInfo::getWindow() {
     return window;
