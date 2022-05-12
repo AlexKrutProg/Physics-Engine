@@ -5,8 +5,7 @@
 #include "../include/Scene.h"
 #include "../include/PhysComponent.h"
 
-Scene::Scene(std::function<void()> fun) : cleaner(gameObjects),
-                                          needReload(true),
+Scene::Scene(std::function<void()> fun) : needReload(true),
                                           backgroundLoaded(false),
                                           loadLevel(fun){}
 
@@ -50,7 +49,6 @@ void Scene::startGameLoop() {
         this->update();
         this->draw();
         this->info.onFrameDone();
-        cleaner.afterUpdate();
         info.getWindow().display();
     }
 }

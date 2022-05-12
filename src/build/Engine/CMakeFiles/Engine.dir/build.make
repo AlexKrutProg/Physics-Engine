@@ -187,19 +187,6 @@ Engine/CMakeFiles/Engine.dir/src/AbstractManager.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Engine.dir/src/AbstractManager.cpp.s"
 	cd /home/nikita/Physics-Engine/src/build/Engine && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/nikita/Physics-Engine/src/Engine/src/AbstractManager.cpp -o CMakeFiles/Engine.dir/src/AbstractManager.cpp.s
 
-Engine/CMakeFiles/Engine.dir/src/CleanManager.cpp.o: Engine/CMakeFiles/Engine.dir/flags.make
-Engine/CMakeFiles/Engine.dir/src/CleanManager.cpp.o: ../Engine/src/CleanManager.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/nikita/Physics-Engine/src/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object Engine/CMakeFiles/Engine.dir/src/CleanManager.cpp.o"
-	cd /home/nikita/Physics-Engine/src/build/Engine && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Engine.dir/src/CleanManager.cpp.o -c /home/nikita/Physics-Engine/src/Engine/src/CleanManager.cpp
-
-Engine/CMakeFiles/Engine.dir/src/CleanManager.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Engine.dir/src/CleanManager.cpp.i"
-	cd /home/nikita/Physics-Engine/src/build/Engine && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/nikita/Physics-Engine/src/Engine/src/CleanManager.cpp > CMakeFiles/Engine.dir/src/CleanManager.cpp.i
-
-Engine/CMakeFiles/Engine.dir/src/CleanManager.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Engine.dir/src/CleanManager.cpp.s"
-	cd /home/nikita/Physics-Engine/src/build/Engine && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/nikita/Physics-Engine/src/Engine/src/CleanManager.cpp -o CMakeFiles/Engine.dir/src/CleanManager.cpp.s
-
 # Object files for target Engine
 Engine_OBJECTS = \
 "CMakeFiles/Engine.dir/src/Scene.cpp.o" \
@@ -211,8 +198,7 @@ Engine_OBJECTS = \
 "CMakeFiles/Engine.dir/src/GlobalInfo.cpp.o" \
 "CMakeFiles/Engine.dir/src/Collider.cpp.o" \
 "CMakeFiles/Engine.dir/src/CollisionManager.cpp.o" \
-"CMakeFiles/Engine.dir/src/AbstractManager.cpp.o" \
-"CMakeFiles/Engine.dir/src/CleanManager.cpp.o"
+"CMakeFiles/Engine.dir/src/AbstractManager.cpp.o"
 
 # External object files for target Engine
 Engine_EXTERNAL_OBJECTS =
@@ -227,10 +213,9 @@ Engine/libEngine.a: Engine/CMakeFiles/Engine.dir/src/GlobalInfo.cpp.o
 Engine/libEngine.a: Engine/CMakeFiles/Engine.dir/src/Collider.cpp.o
 Engine/libEngine.a: Engine/CMakeFiles/Engine.dir/src/CollisionManager.cpp.o
 Engine/libEngine.a: Engine/CMakeFiles/Engine.dir/src/AbstractManager.cpp.o
-Engine/libEngine.a: Engine/CMakeFiles/Engine.dir/src/CleanManager.cpp.o
 Engine/libEngine.a: Engine/CMakeFiles/Engine.dir/build.make
 Engine/libEngine.a: Engine/CMakeFiles/Engine.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/nikita/Physics-Engine/src/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Linking CXX static library libEngine.a"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/nikita/Physics-Engine/src/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Linking CXX static library libEngine.a"
 	cd /home/nikita/Physics-Engine/src/build/Engine && $(CMAKE_COMMAND) -P CMakeFiles/Engine.dir/cmake_clean_target.cmake
 	cd /home/nikita/Physics-Engine/src/build/Engine && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/Engine.dir/link.txt --verbose=$(VERBOSE)
 

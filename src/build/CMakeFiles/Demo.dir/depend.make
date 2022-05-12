@@ -4,7 +4,6 @@
 CMakeFiles/Demo.dir/BubbleComponent.cpp.o: ../BubbleComponent.cpp
 CMakeFiles/Demo.dir/BubbleComponent.cpp.o: ../BubbleComponent.h
 CMakeFiles/Demo.dir/BubbleComponent.cpp.o: ../Engine/include/AbstractManager.h
-CMakeFiles/Demo.dir/BubbleComponent.cpp.o: ../Engine/include/CleanManager.h
 CMakeFiles/Demo.dir/BubbleComponent.cpp.o: ../Engine/include/Collider.h
 CMakeFiles/Demo.dir/BubbleComponent.cpp.o: ../Engine/include/CollisionManager.h
 CMakeFiles/Demo.dir/BubbleComponent.cpp.o: ../Engine/include/Component.h
@@ -15,7 +14,6 @@ CMakeFiles/Demo.dir/BubbleComponent.cpp.o: ../Engine/include/Transform.h
 
 CMakeFiles/Demo.dir/main.cpp.o: ../BubbleComponent.h
 CMakeFiles/Demo.dir/main.cpp.o: ../Engine/include/AbstractManager.h
-CMakeFiles/Demo.dir/main.cpp.o: ../Engine/include/CleanManager.h
 CMakeFiles/Demo.dir/main.cpp.o: ../Engine/include/Collider.h
 CMakeFiles/Demo.dir/main.cpp.o: ../Engine/include/CollisionManager.h
 CMakeFiles/Demo.dir/main.cpp.o: ../Engine/include/Component.h

@@ -5,7 +5,6 @@ set(CMAKE_DEPENDS_LANGUAGES
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
   "/home/nikita/Physics-Engine/src/Engine/src/AbstractManager.cpp" "/home/nikita/Physics-Engine/src/build/Engine/CMakeFiles/Engine.dir/src/AbstractManager.cpp.o"
-  "/home/nikita/Physics-Engine/src/Engine/src/CleanManager.cpp" "/home/nikita/Physics-Engine/src/build/Engine/CMakeFiles/Engine.dir/src/CleanManager.cpp.o"
   "/home/nikita/Physics-Engine/src/Engine/src/Collider.cpp" "/home/nikita/Physics-Engine/src/build/Engine/CMakeFiles/Engine.dir/src/Collider.cpp.o"
   "/home/nikita/Physics-Engine/src/Engine/src/CollisionManager.cpp" "/home/nikita/Physics-Engine/src/build/Engine/CMakeFiles/Engine.dir/src/CollisionManager.cpp.o"
   "/home/nikita/Physics-Engine/src/Engine/src/Component.cpp" "/home/nikita/Physics-Engine/src/build/Engine/CMakeFiles/Engine.dir/src/Component.cpp.o"

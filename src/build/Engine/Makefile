@@ -152,33 +152,6 @@ src/AbstractManager.cpp.s:
 	cd /home/nikita/Physics-Engine/src/build && $(MAKE) -f Engine/CMakeFiles/Engine.dir/build.make Engine/CMakeFiles/Engine.dir/src/AbstractManager.cpp.s
 .PHONY : src/AbstractManager.cpp.s
 
-src/CleanManager.o: src/CleanManager.cpp.o
-
-.PHONY : src/CleanManager.o
-
-# target to build an object file
-src/CleanManager.cpp.o:
-	cd /home/nikita/Physics-Engine/src/build && $(MAKE) -f Engine/CMakeFiles/Engine.dir/build.make Engine/CMakeFiles/Engine.dir/src/CleanManager.cpp.o
-.PHONY : src/CleanManager.cpp.o
-
-src/CleanManager.i: src/CleanManager.cpp.i
-
-.PHONY : src/CleanManager.i
-
-# target to preprocess a source file
-src/CleanManager.cpp.i:
-	cd /home/nikita/Physics-Engine/src/build && $(MAKE) -f Engine/CMakeFiles/Engine.dir/build.make Engine/CMakeFiles/Engine.dir/src/CleanManager.cpp.i
-.PHONY : src/CleanManager.cpp.i
-
-src/CleanManager.s: src/CleanManager.cpp.s
-
-.PHONY : src/CleanManager.s
-
-# target to generate assembly for a file
-src/CleanManager.cpp.s:
-	cd /home/nikita/Physics-Engine/src/build && $(MAKE) -f Engine/CMakeFiles/Engine.dir/build.make Engine/CMakeFiles/Engine.dir/src/CleanManager.cpp.s
-.PHONY : src/CleanManager.cpp.s
-
 src/Collider.o: src/Collider.cpp.o
 
 .PHONY : src/Collider.o
@@ -434,9 +407,6 @@ help:
 	@echo "... src/AbstractManager.o"
 	@echo "... src/AbstractManager.i"
 	@echo "... src/AbstractManager.s"
-	@echo "... src/CleanManager.o"
-	@echo "... src/CleanManager.i"
-	@echo "... src/CleanManager.s"
 	@echo "... src/Collider.o"
 	@echo "... src/Collider.i"
 	@echo "... src/Collider.s"

@@ -6,13 +6,6 @@ Engine/CMakeFiles/Engine.dir/src/AbstractManager.cpp.o
  /home/nikita/Physics-Engine/src/Engine/include/Component.h
  /home/nikita/Physics-Engine/src/Engine/include/Transform.h
  /home/nikita/Physics-Engine/src/Engine/src/AbstractManager.cpp
-Engine/CMakeFiles/Engine.dir/src/CleanManager.cpp.o
- /home/nikita/Physics-Engine/src/Engine/include/AbstractManager.h
- /home/nikita/Physics-Engine/src/Engine/include/CleanManager.h
- /home/nikita/Physics-Engine/src/Engine/include/Component.h
- /home/nikita/Physics-Engine/src/Engine/include/GameObject.h
- /home/nikita/Physics-Engine/src/Engine/include/Transform.h
- /home/nikita/Physics-Engine/src/Engine/src/CleanManager.cpp
 Engine/CMakeFiles/Engine.dir/src/Collider.cpp.o
  /home/nikita/Physics-Engine/src/Engine/include/Collider.h
  /home/nikita/Physics-Engine/src/Engine/src/Collider.cpp
@@ -32,7 +25,6 @@ Engine/CMakeFiles/Engine.dir/src/Component.cpp.o
  /home/nikita/Physics-Engine/src/Engine/src/Component.cpp
 Engine/CMakeFiles/Engine.dir/src/GameObject.cpp.o
  /home/nikita/Physics-Engine/src/Engine/include/AbstractManager.h
- /home/nikita/Physics-Engine/src/Engine/include/CleanManager.h
  /home/nikita/Physics-Engine/src/Engine/include/CollisionManager.h
  /home/nikita/Physics-Engine/src/Engine/include/Component.h
  /home/nikita/Physics-Engine/src/Engine/include/GameObject.h
@@ -41,16 +33,13 @@ Engine/CMakeFiles/Engine.dir/src/GameObject.cpp.o
  /home/nikita/Physics-Engine/src/Engine/src/GameObject.cpp
 Engine/CMakeFiles/Engine.dir/src/GlobalInfo.cpp.o
  /home/nikita/Physics-Engine/src/Engine/include/AbstractManager.h
- /home/nikita/Physics-Engine/src/Engine/include/CleanManager.h
  /home/nikita/Physics-Engine/src/Engine/include/CollisionManager.h
  /home/nikita/Physics-Engine/src/Engine/include/Component.h
- /home/nikita/Physics-Engine/src/Engine/include/GameObject.h
  /home/nikita/Physics-Engine/src/Engine/include/GlobalInfo.h
  /home/nikita/Physics-Engine/src/Engine/include/Transform.h
  /home/nikita/Physics-Engine/src/Engine/src/GlobalInfo.cpp
 Engine/CMakeFiles/Engine.dir/src/PhysComponent.cpp.o
  /home/nikita/Physics-Engine/src/Engine/include/AbstractManager.h
- /home/nikita/Physics-Engine/src/Engine/include/CleanManager.h
  /home/nikita/Physics-Engine/src/Engine/include/Collider.h
  /home/nikita/Physics-Engine/src/Engine/include/CollisionManager.h
  /home/nikita/Physics-Engine/src/Engine/include/Component.h
@@ -61,7 +50,6 @@ Engine/CMakeFiles/Engine.dir/src/PhysComponent.cpp.o
  /home/nikita/Physics-Engine/src/Engine/src/PhysComponent.cpp
 Engine/CMakeFiles/Engine.dir/src/Scene.cpp.o
  /home/nikita/Physics-Engine/src/Engine/include/AbstractManager.h
- /home/nikita/Physics-Engine/src/Engine/include/CleanManager.h
  /home/nikita/Physics-Engine/src/Engine/include/Collider.h
  /home/nikita/Physics-Engine/src/Engine/include/CollisionManager.h
  /home/nikita/Physics-Engine/src/Engine/include/Component.h
@@ -73,7 +61,6 @@ Engine/CMakeFiles/Engine.dir/src/Scene.cpp.o
  /home/nikita/Physics-Engine/src/Engine/src/Scene.cpp
 Engine/CMakeFiles/Engine.dir/src/SpriteComponent.cpp.o
  /home/nikita/Physics-Engine/src/Engine/include/AbstractManager.h
- /home/nikita/Physics-Engine/src/Engine/include/CleanManager.h
  /home/nikita/Physics-Engine/src/Engine/include/CollisionManager.h
  /home/nikita/Physics-Engine/src/Engine/include/Component.h
  /home/nikita/Physics-Engine/src/Engine/include/GameObject.h

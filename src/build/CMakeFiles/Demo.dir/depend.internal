@@ -5,7 +5,6 @@ CMakeFiles/Demo.dir/BubbleComponent.cpp.o
  /home/nikita/Physics-Engine/src/BubbleComponent.cpp
  /home/nikita/Physics-Engine/src/BubbleComponent.h
  /home/nikita/Physics-Engine/src/Engine/include/AbstractManager.h
- /home/nikita/Physics-Engine/src/Engine/include/CleanManager.h
  /home/nikita/Physics-Engine/src/Engine/include/Collider.h
  /home/nikita/Physics-Engine/src/Engine/include/CollisionManager.h
  /home/nikita/Physics-Engine/src/Engine/include/Component.h
@@ -16,7 +15,6 @@ CMakeFiles/Demo.dir/BubbleComponent.cpp.o
 CMakeFiles/Demo.dir/main.cpp.o
  /home/nikita/Physics-Engine/src/BubbleComponent.h
  /home/nikita/Physics-Engine/src/Engine/include/AbstractManager.h
- /home/nikita/Physics-Engine/src/Engine/include/CleanManager.h
  /home/nikita/Physics-Engine/src/Engine/include/Collider.h
  /home/nikita/Physics-Engine/src/Engine/include/CollisionManager.h
  /home/nikita/Physics-Engine/src/Engine/include/Component.h

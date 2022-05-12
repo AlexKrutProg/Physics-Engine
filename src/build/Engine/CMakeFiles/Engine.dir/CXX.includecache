@@ -10,14 +10,6 @@
 Component.h
 /home/nikita/Physics-Engine/src/Engine/include/Component.h
 
-/home/nikita/Physics-Engine/src/Engine/include/CleanManager.h
-stack
--
-AbstractManager.h
-/home/nikita/Physics-Engine/src/Engine/include/AbstractManager.h
-GameObject.h
-/home/nikita/Physics-Engine/src/Engine/include/GameObject.h
-
 /home/nikita/Physics-Engine/src/Engine/include/Collider.h
 vector
 -
@@ -57,8 +49,6 @@ SFML/Graphics/RenderWindow.hpp
 -
 SFML/Graphics/Font.hpp
 -
-CleanManager.h
-/home/nikita/Physics-Engine/src/Engine/include/CleanManager.h
 CollisionManager.h
 /home/nikita/Physics-Engine/src/Engine/include/CollisionManager.h
 random
@@ -87,44 +77,12 @@ GameObject.h
 /home/nikita/Physics-Engine/src/Engine/include/GameObject.h
 CollisionManager.h
 /home/nikita/Physics-Engine/src/Engine/include/CollisionManager.h
-CleanManager.h
-/home/nikita/Physics-Engine/src/Engine/include/CleanManager.h
 functional
 -
-
-/home/nikita/Physics-Engine/src/Engine/include/SpriteComponent.h
-SFML/Graphics/Sprite.hpp
--
-SFML/Graphics/RenderWindow.hpp
--
-Component.h
-/home/nikita/Physics-Engine/src/Engine/include/Component.h
 
 /home/nikita/Physics-Engine/src/Engine/include/Transform.h
 SFML/System.hpp
 -
-
-/home/nikita/Physics-Engine/src/Engine/src/GameObject.cpp
-../include/GameObject.h
-/home/nikita/Physics-Engine/src/Engine/include/GameObject.h
-../include/Component.h
-/home/nikita/Physics-Engine/src/Engine/include/Component.h
-../include/GlobalInfo.h
-/home/nikita/Physics-Engine/src/Engine/include/GlobalInfo.h
-
-/home/nikita/Physics-Engine/src/Engine/src/GlobalInfo.cpp
-../include/GlobalInfo.h
-/home/nikita/Physics-Engine/src/Engine/include/GlobalInfo.h
-
-/home/nikita/Physics-Engine/src/Engine/src/PhysComponent.cpp
-SFML/Graphics/RectangleShape.hpp
--
-../include/PhysComponent.h
-/home/nikita/Physics-Engine/src/Engine/include/PhysComponent.h
-../include/CollisionManager.h
-/home/nikita/Physics-Engine/src/Engine/include/CollisionManager.h
-../include/GlobalInfo.h
-/home/nikita/Physics-Engine/src/Engine/include/GlobalInfo.h
 
 /home/nikita/Physics-Engine/src/Engine/src/Scene.cpp
 SFML/Window/Event.hpp
@@ -139,14 +97,4 @@ iostream
 /home/nikita/Physics-Engine/src/Engine/include/Scene.h
 ../include/PhysComponent.h
 /home/nikita/Physics-Engine/src/Engine/include/PhysComponent.h
-
-/home/nikita/Physics-Engine/src/Engine/src/SpriteComponent.cpp
-../include/SpriteComponent.h
-/home/nikita/Physics-Engine/src/Engine/include/SpriteComponent.h
-../include/GameObject.h
-/home/nikita/Physics-Engine/src/Engine/include/GameObject.h
-../include/GlobalInfo.h
-/home/nikita/Physics-Engine/src/Engine/include/GlobalInfo.h
-SFML/Graphics.hpp
--
 

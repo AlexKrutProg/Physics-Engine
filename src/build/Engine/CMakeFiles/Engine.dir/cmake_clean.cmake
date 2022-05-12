@@ -1,6 +1,5 @@
 file(REMOVE_RECURSE
   "CMakeFiles/Engine.dir/src/AbstractManager.cpp.o"
-  "CMakeFiles/Engine.dir/src/CleanManager.cpp.o"
   "CMakeFiles/Engine.dir/src/Collider.cpp.o"
   "CMakeFiles/Engine.dir/src/CollisionManager.cpp.o"
   "CMakeFiles/Engine.dir/src/Component.cpp.o"

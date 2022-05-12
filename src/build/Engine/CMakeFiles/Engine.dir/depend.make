@@ -6,13 +6,6 @@ Engine/CMakeFiles/Engine.dir/src/AbstractManager.cpp.o: ../Engine/include/Compon
 Engine/CMakeFiles/Engine.dir/src/AbstractManager.cpp.o: ../Engine/include/Transform.h
 Engine/CMakeFiles/Engine.dir/src/AbstractManager.cpp.o: ../Engine/src/AbstractManager.cpp
 
-Engine/CMakeFiles/Engine.dir/src/CleanManager.cpp.o: ../Engine/include/AbstractManager.h
-Engine/CMakeFiles/Engine.dir/src/CleanManager.cpp.o: ../Engine/include/CleanManager.h
-Engine/CMakeFiles/Engine.dir/src/CleanManager.cpp.o: ../Engine/include/Component.h
-Engine/CMakeFiles/Engine.dir/src/CleanManager.cpp.o: ../Engine/include/GameObject.h
-Engine/CMakeFiles/Engine.dir/src/CleanManager.cpp.o: ../Engine/include/Transform.h
-Engine/CMakeFiles/Engine.dir/src/CleanManager.cpp.o: ../Engine/src/CleanManager.cpp
-
 Engine/CMakeFiles/Engine.dir/src/Collider.cpp.o: ../Engine/include/Collider.h
 Engine/CMakeFiles/Engine.dir/src/Collider.cpp.o: ../Engine/src/Collider.cpp
 
@@ -31,7 +24,6 @@ Engine/CMakeFiles/Engine.dir/src/Component.cpp.o: ../Engine/include/Transform.h
 Engine/CMakeFiles/Engine.dir/src/Component.cpp.o: ../Engine/src/Component.cpp
 
 Engine/CMakeFiles/Engine.dir/src/GameObject.cpp.o: ../Engine/include/AbstractManager.h
-Engine/CMakeFiles/Engine.dir/src/GameObject.cpp.o: ../Engine/include/CleanManager.h
 Engine/CMakeFiles/Engine.dir/src/GameObject.cpp.o: ../Engine/include/CollisionManager.h
 Engine/CMakeFiles/Engine.dir/src/GameObject.cpp.o: ../Engine/include/Component.h
 Engine/CMakeFiles/Engine.dir/src/GameObject.cpp.o: ../Engine/include/GameObject.h
@@ -40,16 +32,13 @@ Engine/CMakeFiles/Engine.dir/src/GameObject.cpp.o: ../Engine/include/Transform.h
 Engine/CMakeFiles/Engine.dir/src/GameObject.cpp.o: ../Engine/src/GameObject.cpp
 
 Engine/CMakeFiles/Engine.dir/src/GlobalInfo.cpp.o: ../Engine/include/AbstractManager.h
-Engine/CMakeFiles/Engine.dir/src/GlobalInfo.cpp.o: ../Engine/include/CleanManager.h
 Engine/CMakeFiles/Engine.dir/src/GlobalInfo.cpp.o: ../Engine/include/CollisionManager.h
 Engine/CMakeFiles/Engine.dir/src/GlobalInfo.cpp.o: ../Engine/include/Component.h
-Engine/CMakeFiles/Engine.dir/src/GlobalInfo.cpp.o: ../Engine/include/GameObject.h
 Engine/CMakeFiles/Engine.dir/src/GlobalInfo.cpp.o: ../Engine/include/GlobalInfo.h
 Engine/CMakeFiles/Engine.dir/src/GlobalInfo.cpp.o: ../Engine/include/Transform.h
 Engine/CMakeFiles/Engine.dir/src/GlobalInfo.cpp.o: ../Engine/src/GlobalInfo.cpp
 
 Engine/CMakeFiles/Engine.dir/src/PhysComponent.cpp.o: ../Engine/include/AbstractManager.h
-Engine/CMakeFiles/Engine.dir/src/PhysComponent.cpp.o: ../Engine/include/CleanManager.h
 Engine/CMakeFiles/Engine.dir/src/PhysComponent.cpp.o: ../Engine/include/Collider.h
 Engine/CMakeFiles/Engine.dir/src/PhysComponent.cpp.o: ../Engine/include/CollisionManager.h
 Engine/CMakeFiles/Engine.dir/src/PhysComponent.cpp.o: ../Engine/include/Component.h
@@ -60,7 +49,6 @@ Engine/CMakeFiles/Engine.dir/src/PhysComponent.cpp.o: ../Engine/include/Transfor
 Engine/CMakeFiles/Engine.dir/src/PhysComponent.cpp.o: ../Engine/src/PhysComponent.cpp
 
 Engine/CMakeFiles/Engine.dir/src/Scene.cpp.o: ../Engine/include/AbstractManager.h
-Engine/CMakeFiles/Engine.dir/src/Scene.cpp.o: ../Engine/include/CleanManager.h
 Engine/CMakeFiles/Engine.dir/src/Scene.cpp.o: ../Engine/include/Collider.h
 Engine/CMakeFiles/Engine.dir/src/Scene.cpp.o: ../Engine/include/CollisionManager.h
 Engine/CMakeFiles/Engine.dir/src/Scene.cpp.o: ../Engine/include/Component.h
@@ -72,7 +60,6 @@ Engine/CMakeFiles/Engine.dir/src/Scene.cpp.o: ../Engine/include/Transform.h
 Engine/CMakeFiles/Engine.dir/src/Scene.cpp.o: ../Engine/src/Scene.cpp
 
 Engine/CMakeFiles/Engine.dir/src/SpriteComponent.cpp.o: ../Engine/include/AbstractManager.h
-Engine/CMakeFiles/Engine.dir/src/SpriteComponent.cpp.o: ../Engine/include/CleanManager.h
 Engine/CMakeFiles/Engine.dir/src/SpriteComponent.cpp.o: ../Engine/include/CollisionManager.h
 Engine/CMakeFiles/Engine.dir/src/SpriteComponent.cpp.o: ../Engine/include/Component.h
 Engine/CMakeFiles/Engine.dir/src/SpriteComponent.cpp.o: ../Engine/include/GameObject.h

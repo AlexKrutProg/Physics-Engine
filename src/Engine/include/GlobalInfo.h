@@ -2,7 +2,6 @@
 #include <SFML/System.hpp>
 #include <SFML/Graphics/RenderWindow.hpp>
 #include <SFML/Graphics/Font.hpp>
-#include "CleanManager.h"
 #include "CollisionManager.h"
 #include <random>
 

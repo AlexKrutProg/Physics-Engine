@@ -3,7 +3,6 @@
 #include "GlobalInfo.h"
 #include "GameObject.h"
 #include "CollisionManager.h"
-#include "CleanManager.h"
 #include <functional>
 #pragma once
 class Scene {
@@ -15,7 +14,6 @@ private:
     void draw();
 
     std::forward_list<GameObject> gameObjects;
-    CleanManager cleaner;
     bool needReload;
     sf::Sprite background;
     bool backgroundLoaded;

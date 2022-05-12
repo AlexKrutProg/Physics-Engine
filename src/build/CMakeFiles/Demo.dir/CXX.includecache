@@ -22,14 +22,6 @@ Engine/include/PhysComponent.h
 Component.h
 /home/nikita/Physics-Engine/src/Engine/include/Component.h
 
-/home/nikita/Physics-Engine/src/Engine/include/CleanManager.h
-stack
--
-AbstractManager.h
-/home/nikita/Physics-Engine/src/Engine/include/AbstractManager.h
-GameObject.h
-/home/nikita/Physics-Engine/src/Engine/include/GameObject.h
-
 /home/nikita/Physics-Engine/src/Engine/include/Collider.h
 vector
 -
@@ -69,8 +61,6 @@ SFML/Graphics/RenderWindow.hpp
 -
 SFML/Graphics/Font.hpp
 -
-CleanManager.h
-/home/nikita/Physics-Engine/src/Engine/include/CleanManager.h
 CollisionManager.h
 /home/nikita/Physics-Engine/src/Engine/include/CollisionManager.h
 random
@@ -99,8 +89,6 @@ GameObject.h
 /home/nikita/Physics-Engine/src/Engine/include/GameObject.h
 CollisionManager.h
 /home/nikita/Physics-Engine/src/Engine/include/CollisionManager.h
-CleanManager.h
-/home/nikita/Physics-Engine/src/Engine/include/CleanManager.h
 functional
 -
 
