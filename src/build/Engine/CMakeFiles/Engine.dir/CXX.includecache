@@ -104,14 +104,6 @@ Component.h
 SFML/System.hpp
 -
 
-/home/nikita/Physics-Engine/src/Engine/src/CollisionManager.cpp
-cmath
--
-../include/CollisionManager.h
-/home/nikita/Physics-Engine/src/Engine/include/CollisionManager.h
-../include/PhysComponent.h
-/home/nikita/Physics-Engine/src/Engine/include/PhysComponent.h
-
 /home/nikita/Physics-Engine/src/Engine/src/GameObject.cpp
 ../include/GameObject.h
 /home/nikita/Physics-Engine/src/Engine/include/GameObject.h
