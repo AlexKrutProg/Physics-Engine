@@ -24,4 +24,4 @@
 >
 > $ cd Physics-Engine 
 > 
-> $ bash run.sh
+> $ sudo bash run.sh
